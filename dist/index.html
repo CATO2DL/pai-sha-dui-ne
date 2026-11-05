@@ -6,14 +6,20 @@
   <title>排啥队呢</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23355d3e'/%3E%3Cellipse cx='20' cy='26' rx='9' ry='7' fill='%23f1f0d7'/%3E%3Cellipse cx='9' cy='15' rx='4' ry='5' fill='%23f1f0d7'/%3E%3Cellipse cx='19' cy='10' rx='4' ry='5' fill='%23f1f0d7'/%3E%3Cellipse cx='29' cy='14' rx='4' ry='5' fill='%23f1f0d7'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
-  <script defer src="engine.js"></script><script defer src="sprites.js"></script><script defer src="audio.js"></script><script defer src="app.js"></script>
+  <script defer src="generator.js"></script><script defer src="engine.js"></script><script defer src="sprites.js"></script><script defer src="audio.js"></script><script defer src="app.js"></script>
 </head>
 <body>
 <div class="shell">
   <header class="header">
     <a class="brand" href="./" aria-label="排啥队呢首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><ellipse cx="20" cy="26" rx="10" ry="8"/><ellipse cx="8" cy="15" rx="4" ry="5" transform="rotate(-25 8 15)"/><ellipse cx="18" cy="9" rx="4" ry="5"/><ellipse cx="29" cy="12" rx="4" ry="5" transform="rotate(25 29 12)"/></svg></span><span>排啥队呢</span></a>
     <div class="header-actions">
-      <div class="level-tabs" aria-label="选择关卡"><button id="level-one" class="level-tab active" aria-label="第一关" title="第一关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c9 1 15-4 14-14C9 4 4 10 5 19Zm0 0 9-9"/></svg></button><button id="level-two" class="level-tab" aria-label="第二关" title="第二关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-5 7h3l-5 7h14l-5-7h3l-5-7Zm0 14v4"/></svg></button></div>
+      <div class="level-tabs" aria-label="选择关卡">
+        <button id="level-one" class="level-tab active" aria-label="第一关" title="第一关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c9 1 15-4 14-14C9 4 4 10 5 19Zm0 0 9-9"/></svg></button>
+        <button id="level-two" class="level-tab" aria-label="第二关" title="第二关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V10M12 14C5 15 3 10 3 5c7 0 9 4 9 9Zm0-3c0-6 4-9 9-9 0 6-3 10-9 9Z"/></svg></button>
+        <button id="level-three" class="level-tab" aria-label="第三关" title="第三关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-5 7h3l-5 7h14l-5-7h3l-5-7Zm0 14v4"/></svg></button>
+        <button id="level-four" class="level-tab" aria-label="第四关" title="第四关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 4-4 6h2l-4 7h12l-4-7h2L8 4Zm0 13v4m9-17-3 5h2l-3 7h9l-4-7h2l-3-5Zm0 12v5"/></svg></button>
+        <button id="level-five" class="level-tab" aria-label="第五关" title="第五关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 20 7-13 7 13H2Zm10-7 4-9 6 16h-6M6 13l3 2 3-2m3-6 2 2 1-1"/></svg></button>
+      </div>
       <span class="action-divider" aria-hidden="true"></span>
       <button id="restart-button" class="icon-button" aria-label="重开本局" title="重开本局"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></svg></button>
       <button id="new-button" class="icon-button" aria-label="换一局" title="换一局"><svg viewBox="0 0 24 24"><path d="M3 7h3c5 0 7 10 12 10h3m-4-4 4 4-4 4M3 17h3c2 0 3-2 4-4m4-4c1-1 2-2 4-2h3m-4-4 4 4-4 4"/></svg></button>

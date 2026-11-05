@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const E = require('../dist/engine.js');
+// Preserve the deployed group-transfer rules as a historical regression suite.
+// Current single-animal rules are covered in engine-rule6.test.mjs.
+const E = require('../scripts/fixtures/engine-generator3-rules5.cjs');
 const historicalV3 = require('../scripts/fixtures/engine-generator3-rules3.cjs');
 const historicalV4 = require('../scripts/fixtures/engine-generator3-rules4.cjs');
 const migrationFixtures = require('../scripts/fixtures/rules3-capacity-migrations.json');

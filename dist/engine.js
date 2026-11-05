@@ -10,8 +10,9 @@
   const BUFFER_CAPACITY = 7;
   const BUFFER_SLOTS = BUFFER_CAPACITY;
   const LEGACY_BUFFER_GROUPS = 4;
-  const RULES_VERSION = 5;
-  const GENERATOR_VERSION = 3;
+  const RULES_VERSION = 6;
+  const GENERATOR_VERSION = 4;
+  const LEVEL_COUNT = 5;
   // Origins are reconstructed from history, never exposed or serialized.
   const bufferOrigins = new WeakMap();
   const copyGroup = group => {
@@ -87,22 +88,31 @@
 
   function transfer(state, from, to, rulesVersion = RULES_VERSION) {
     const replayLegacy = rulesVersion < 3;
+    const singleAnimal = rulesVersion >= 6;
     const group = getHead(state, from);
-    if (!group) return { ok: false, error: '这里只能选择队首的一整组动物。' };
+    if (!group) return { ok: false, error: singleAnimal ? '这里只能选择队首的第一只动物。' : '这里只能选择队首的一整组动物。' };
     if (!to || !['queue', 'buffer'].includes(to.type)) return { ok: false, error: '请选择一个目的地。' };
     if (from.type === 'buffer' && to.type === 'buffer') return { ok: false, error: '暂存队首只能移回同类主队。' };
     if (to.type === 'queue') {
+      if (singleAnimal && from.type === 'queue') return { ok: false, error: '主队动物只能先移入下方暂存区。' };
       if (from.type === 'queue' && from.index === to.index) return { ok: false, error: '这组动物已经在这条队伍中。' };
       const destination = getHead(state, to);
       if (!destination) return { ok: false, error: '这条队伍已清空，不能再放入动物。' };
       if (group.species !== destination.species) return { ok: false, error: '只能移到同种动物的队首。' };
       if (!replayLegacy && from.type === 'queue' && group.count + destination.count < MATCH_COUNT) return { ok: false, error: '主队之间只有凑够五只才能直接消除。' };
     }
-    let amount = group.count;
+    let amount = singleAnimal ? 1 : group.count;
     if (rulesVersion >= 4 && to.type === 'buffer') {
       const free = Math.max(0, BUFFER_CAPACITY - sumQueue(state.buffer));
-      amount = Math.min(group.count, free);
-      if (rulesVersion >= 5) {
+      if (singleAnimal) {
+        const matching = state.buffer.reduce((sum, stored) => sum + (stored.species === group.species ? stored.count : 0), 0);
+        // A full buffer may accept this one animal only when it clears five.
+        // Never borrow another member of the source group to finish the match.
+        if (free < 1 && matching + 1 < MATCH_COUNT) amount = 0;
+      } else {
+        amount = Math.min(group.count, free);
+      }
+      if (rulesVersion === 5) {
         const matching = state.buffer.reduce((sum, stored) => sum + (stored.species === group.species ? stored.count : 0), 0);
         const needed = MATCH_COUNT - matching;
         // An immediate clear may bypass occupied slots. Take only what this
@@ -112,12 +122,13 @@
       if (amount <= 0) return { ok: false, error: rulesVersion >= 5 ? '暂存已满，只有能直接凑够五只的同类才能移入。' : '暂存已满，最多只能放七只动物。' };
     }
     const next = copyState(state);
+    const sourceQueue = from.type === 'queue' ? next.queues[from.index] : next.buffer;
     let moved;
-    if (from.type === 'queue' && to.type === 'buffer' && amount < group.count) {
-      moved = copyGroup(next.queues[from.index][0]);
+    if (amount < group.count) {
+      moved = copyGroup(sourceQueue[0]);
       moved.count = amount;
-      next.queues[from.index][0].count -= amount;
-    } else moved = from.type === 'queue' ? next.queues[from.index].shift() : next.buffer.shift();
+      sourceQueue[0].count -= amount;
+    } else moved = sourceQueue.shift();
     if (to.type === 'buffer') {
       bufferOrigins.set(moved, from.index);
       next.buffer.push(moved);
@@ -125,6 +136,7 @@
     else next.queues[to.index].unshift(moved);
     const cleared = settle(next, replayLegacy);
     if (rulesVersion < 4 && next.buffer.length > LEGACY_BUFFER_GROUPS) return { ok: false, error: '暂存已满：消除后也只能保留四组。' };
+    if (singleAnimal && sumQueue(next.buffer) > BUFFER_CAPACITY) return { ok: false, error: '消除后暂存区仍不能超过七只动物。' };
     next.moves = (state.moves || 0) + 1;
     return { ok: true, state: next, cleared };
   }
@@ -193,7 +205,7 @@
       const move = history[index];
       if (!move || typeof move !== 'object') throw new Error(`存档第 ${index + 1} 步无效。`);
       const version = move.rulesVersion === undefined ? 2 : move.rulesVersion;
-      if (![1, 2, 3, 4, 5].includes(version)) throw new Error(`存档第 ${index + 1} 步规则版本无效。`);
+      if (![1, 2, 3, 4, 5, 6].includes(version)) throw new Error(`存档第 ${index + 1} 步规则版本无效。`);
       const nextPhase = Math.max(2, version);
       if (nextPhase < phase) throw new Error(`存档第 ${index + 1} 步不能退回旧规则。`);
       if (phase < 3 && nextPhase >= 3) settle(state);
@@ -424,16 +436,24 @@
     throw new Error('盘面生成失败，请更换随机种子。');
   }
 
+  function makeChallengeV4(random, level) {
+    const generator = typeof module === 'object' && module.exports ? require('./generator.js') : globalThis.AnimalQueueGenerator;
+    if (!generator || typeof generator.generate !== 'function') throw new Error('新盘面生成器未加载，请刷新页面。');
+    return generator.generate(species, random, level);
+  }
+
   function createLevel(level, seed, generatorVersion = GENERATOR_VERSION) {
-    if (level !== 1 && level !== 2) throw new RangeError('关卡只能是 1 或 2。');
-    if (![1, 2, 3].includes(generatorVersion)) throw new RangeError('未知的盘面生成版本。');
+    if (!Number.isInteger(level) || level < 1 || level > LEVEL_COUNT) throw new RangeError('关卡只能是 1 至 5。');
+    if (![1, 2, 3, 4].includes(generatorVersion)) throw new RangeError('未知的盘面生成版本。');
+    if (generatorVersion < 4 && level > 2) throw new RangeError('旧盘面生成版本仅支持第一关和第二关。');
     const fixedSeed = String(seed ?? Math.floor(Math.random() * 1000000000));
-    const queues = level === 1 ? [
+    const queues = generatorVersion === 4 ? makeChallengeV4(seededRandom(fixedSeed), level) : level === 1 ? [
       [{ species: 'sheep', count: 2 }, { species: 'cat', count: 3 }],
       [{ species: 'sheep', count: 3 }, { species: 'dog', count: 2 }],
       [{ species: 'cat', count: 2 }, { species: 'dog', count: 3 }]
     ] : ({ 1: makeChallenge, 2: makeChallengeV2, 3: makeChallengeV3 })[generatorVersion](seededRandom(fixedSeed));
-    return { level, seed: fixedSeed, generatorVersion: level === 1 ? 1 : generatorVersion, queues, buffer: [], total: level === 1 ? 15 : generatorVersion === 3 ? 240 : 160, cleared: 0, moves: 0, status: 'playing' };
+    const recordedGeneratorVersion = level === 1 && generatorVersion < 4 ? 1 : generatorVersion;
+    return { level, seed: fixedSeed, generatorVersion: recordedGeneratorVersion, queues, buffer: [], total: queues.reduce((sum, queue) => sum + sumQueue(queue), 0), cleared: 0, moves: 0, status: 'playing' };
   }
 
   // A local suggestion, not a solver: hidden tails are never inspected for hints.
@@ -447,12 +467,12 @@
       if (move.to.type === 'queue') score += 30;
       if (move.to.type === 'buffer') {
         score -= result.state.buffer.length * 10;
-        const nextHead = state.queues[move.from.index][1];
+        const nextHead = result.state.queues[move.from.index][0];
         if (nextHead && state.queues.some((queue, index) => index !== move.from.index && queue[0]?.species === nextHead.species)) score += 20;
       }
       return { move, score };
     }).sort((a, b) => b.score - a.score)[0].move;
   }
 
-  return Object.freeze({ species, MATCH_COUNT, BUFFER_CAPACITY, BUFFER_SLOTS, RULES_VERSION, GENERATOR_VERSION, createLevel, getHead, legalMoves, applyMove, restoreReplay, getHint, remaining });
+  return Object.freeze({ species, MATCH_COUNT, BUFFER_CAPACITY, BUFFER_SLOTS, RULES_VERSION, GENERATOR_VERSION, LEVEL_COUNT, createLevel, getHead, legalMoves, applyMove, restoreReplay, getHint, remaining });
 });

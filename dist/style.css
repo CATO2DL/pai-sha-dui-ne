@@ -10,7 +10,41 @@
 
 /* Restore the original crowded rear: only foreground entrances stay distinct. */
 .paths{display:none}.board{height:clamp(460px,58vh,610px);min-height:460px}@media(min-width:1500px){.board{height:610px;min-height:460px}}@media(max-width:850px){.board{height:460px;min-height:460px}}@media(max-width:590px){.board{height:420px;min-height:420px}}
-/* More entrances share the same field; only very narrow viewports need to pan. */
+/* More entrances share the same field. */
 .game-card:has(.dense-queues){overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain}.board.dense-queues{min-width:var(--min-board-width,0px)}.dense-queues .queue-button{min-width:44px;touch-action:manipulation}.dense-queues .animal .sprite-inner{pointer-events:none}
+/* Seven ground stations never move or resize when their occupants change. */
+.queue-animals{display:contents}
+.queue-button,.head-animal{touch-action:manipulation}
+.game-card:has(.dense-queues){overflow:hidden}
+.board.dense-queues{min-width:0}
+.dense-queues .queue-button{min-width:0}
+.buffer-floor{min-height:148px}
+.buffer-floor:before{left:3%;right:2%;bottom:30px;height:32px;background:#e2e5ce;border-radius:50%;opacity:.8}
+.buffer-slots{--flag-width:34px;--station-gap:8px;display:grid;grid-template-columns:var(--flag-width) repeat(7,minmax(0,1fr));gap:var(--station-gap);align-items:end;width:min(100%,760px);min-height:148px;margin:0 auto;padding:0 0 20px;outline-offset:0}
+.buffer-slots[aria-disabled=true]{cursor:default}
+.buffer-slot{display:block;position:relative;min-width:0;width:100%;height:100px;line-height:0}
+.buffer-station{position:absolute;left:50%;bottom:8px;translate:-50% 0;width:70%;max-width:48px;height:13px;border:2px solid #b6c69d;border-radius:50%;background:#d4dfc3;box-shadow:inset 0 2px 1px #b8c6a349;transition:background .15s,border-color .15s}
+.buffer-slot.occupied .buffer-station{border-color:#a7bc88;background:#c9d8b2}
+.buffer-slot.selected .buffer-station{border-color:#b18d42;background:#f1d985;box-shadow:0 0 0 3px #f1d98533}
+.buffer-slot .buffer-animal{position:absolute;left:50%;bottom:17px;translate:-50% 0;width:min(100%,74px);height:auto;aspect-ratio:1;transform-origin:50% 90%;filter:drop-shadow(0 3px 0 #66754c20)}
+.buffer-slot .buffer-animal .sprite{width:100%;height:100%}
+.buffer-flag{height:100px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:12px;pointer-events:none}
+.buffer-flag svg{display:block;width:100%;max-width:34px;height:76px;overflow:visible;rotate:-4deg}
+.header-actions{flex-wrap:wrap}
+@media(max-width:850px){.buffer-slots{--flag-width:29px;--station-gap:6px}}
+@media(max-width:590px){
+  .header{gap:8px;padding:10px 0}
+  .board{height:clamp(280px,calc(100svh - 288px),420px);min-height:280px}
+  .header-actions{flex-basis:100%;justify-content:center;gap:7px}
+  .level-tabs{flex-basis:100%;justify-content:center;gap:14px;margin:0 0 4px;padding:0;background:none}
+  .level-tab{width:32px;height:32px;background:#e7ebdb}
+  .action-divider{display:none}
+  .buffer-floor,.buffer-slots{min-height:128px}
+  .buffer-slots{--flag-width:20px;--station-gap:3px;padding-bottom:20px}
+  .buffer-slot,.buffer-flag{height:85px}
+  .buffer-flag svg{height:60px}
+  .buffer-station{width:75%;height:11px;border-width:1.5px}
+  .buffer-slot .buffer-animal{bottom:15px}
+}
 /* A small cartoon retry moment, without adding guidance to the board. */
 .modal:has(.retry-result){border:2px solid #536044;border-radius:31px 26px 32px 25px;background:#fbf6df;box-shadow:0 6px 0 #35452e22,0 25px 80px #263c3433}.retry-result .result-mark{display:flex;align-items:center;justify-content:center;gap:20px;color:#a7a568}.retry-result .result-mark span:first-child{font-size:29px;color:#d1ab42;transform:rotate(-19deg)}.retry-result .result-mark span:nth-child(2){font-size:48px;transform:rotate(-9deg)}.retry-result .result-mark span:last-child{font-size:23px;color:#d1ab42;transform:rotate(17deg)}.retry-result .result-art{margin:0 0 30px;height:145px}.retry-result .result-art svg{width:132px;height:132px;animation:oops-wobble .75s ease-out both}.retry-result .result-art svg+svg{width:107px;height:107px;animation-delay:.1s;transform:rotate(10deg)}.modal .retry-primary{display:flex;align-items:center;justify-content:center;gap:9px;width:auto;min-width:166px;height:55px;padding:0 22px;border:2px solid #465438;border-radius:18px 15px 19px 16px;background:#efce6c;color:#34472b;font-size:21px;font-weight:850;box-shadow:0 4px 0 #465438;transform:rotate(-2deg)}.retry-primary span{font-size:29px;font-weight:400}.result-actions .retry-primary:hover{background:#f5d981;transform:rotate(0) translateY(-1px)}.result-actions .retry-primary:active{transform:translateY(3px);box-shadow:0 1px 0 #465438}@keyframes oops-wobble{0%{transform:translateY(-8px) rotate(-12deg)}35%{transform:translateY(0) rotate(7deg)}65%{transform:rotate(-5deg)}100%{transform:rotate(-3deg)}}@media(prefers-reduced-motion:reduce){.retry-result .result-art svg{animation:none}}

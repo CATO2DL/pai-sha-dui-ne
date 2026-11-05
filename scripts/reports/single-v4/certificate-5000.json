@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "result": "PASS",
+  "rules_version": 6,
+  "generator_version": 4,
+  "method": "Independently expand the initial queues to individual animals, consume the lane sequence in each construction certificate, and execute each action through the production single-animal engine. Check exact species sequence, unit removal, no main-queue auto-clear, quotas, capacity, conservation and final win. Stage metadata is descriptive and is not used to determine actions or expected species.",
+  "seed_prefix": "aq-independent-certificate-20261105",
+  "seed_pattern": "<prefix>:<level>:<index>",
+  "seed_index_range": [
+    0,
+    999
+  ],
+  "source_sha256": {
+    "dist/engine.js": "55475f4d656efeec99f54bb19598750074bc8237930b7eff59e42c0462651bef",
+    "dist/generator.js": "d3527ae299966c076fa03b6c8d7f232f48513eb63b14b1d659bf93b3e0eec748"
+  },
+  "started_at_utc": "2026-11-05T01:25:26.136Z",
+  "completed_at_utc": "2026-11-05T01:25:43.532Z",
+  "certificate_run_ms": 17393.951,
+  "boards": 5000,
+  "actions": 800000,
+  "full_buffer_single_clear_rescues": 4620,
+  "wins": 5000,
+  "construction_failures": 0,
+  "illegal_certificate_actions": 0,
+  "unintended_main_clears": 0,
+  "capacity_violations": 0,
+  "conservation_failures": 0,
+  "construction_timing": {
+    "samples": 5000,
+    "min_ms": 0.012875,
+    "median_ms": 0.040416,
+    "p95_ms": 0.099083,
+    "max_ms": 0.85625
+  },
+  "per_level": [
+    {
+      "level": 1,
+      "seeds": 1000,
+      "total": 60,
+      "lanes": 3,
+      "wins": 1000,
+      "max_buffer": 5,
+      "earliest_closed_fraction": 0.8667,
+      "first80_carry_sum": 814,
+      "first80_stages": 5000,
+      "last20_carry_sum": 385,
+      "last20_stages": 1000,
+      "preview_stages": 0,
+      "mean_carry_first80": 0.163,
+      "mean_carry_last20": 0.385,
+      "construction_timing": {
+        "samples": 1000,
+        "min_ms": 0.012875,
+        "median_ms": 0.01625,
+        "p95_ms": 0.04475,
+        "max_ms": 0.469041
+      }
+    },
+    {
+      "level": 2,
+      "seeds": 1000,
+      "total": 100,
+      "lanes": 4,
+      "wins": 1000,
+      "max_buffer": 5,
+      "earliest_closed_fraction": 0.91,
+      "first80_carry_sum": 4132,
+      "first80_stages": 8000,
+      "last20_carry_sum": 1559,
+      "last20_stages": 2000,
+      "preview_stages": 0,
+      "mean_carry_first80": 0.516,
+      "mean_carry_last20": 0.779,
+      "construction_timing": {
+        "samples": 1000,
+        "min_ms": 0.0215,
+        "median_ms": 0.026083,
+        "p95_ms": 0.036292,
+        "max_ms": 0.1995
+      }
+    },
+    {
+      "level": 3,
+      "seeds": 1000,
+      "total": 150,
+      "lanes": 5,
+      "wins": 1000,
+      "max_buffer": 6,
+      "earliest_closed_fraction": 0.9467,
+      "first80_carry_sum": 11369,
+      "first80_stages": 12000,
+      "last20_carry_sum": 3652,
+      "last20_stages": 3000,
+      "preview_stages": 0,
+      "mean_carry_first80": 0.947,
+      "mean_carry_last20": 1.217,
+      "construction_timing": {
+        "samples": 1000,
+        "min_ms": 0.031834,
+        "median_ms": 0.039375,
+        "p95_ms": 0.060084,
+        "max_ms": 0.85625
+      }
+    },
+    {
+      "level": 4,
+      "seeds": 1000,
+      "total": 210,
+      "lanes": 6,
+      "wins": 1000,
+      "max_buffer": 6,
+      "earliest_closed_fraction": 0.9619,
+      "first80_carry_sum": 22404,
+      "first80_stages": 17000,
+      "last20_carry_sum": 6491,
+      "last20_stages": 4000,
+      "preview_stages": 0,
+      "mean_carry_first80": 1.318,
+      "mean_carry_last20": 1.623,
+      "construction_timing": {
+        "samples": 1000,
+        "min_ms": 0.043792,
+        "median_ms": 0.057083,
+        "p95_ms": 0.08925,
+        "max_ms": 0.555708
+      }
+    },
+    {
+      "level": 5,
+      "seeds": 1000,
+      "total": 280,
+      "lanes": 7,
+      "wins": 1000,
+      "max_buffer": 7,
+      "earliest_closed_fraction": 0.9714,
+      "first80_carry_sum": 36866,
+      "first80_stages": 23000,
+      "last20_carry_sum": 9340,
+      "last20_stages": 5000,
+      "preview_stages": 6912,
+      "mean_carry_first80": 1.603,
+      "mean_carry_last20": 1.868,
+      "construction_timing": {
+        "samples": 1000,
+        "min_ms": 0.065916,
+        "median_ms": 0.084083,
+        "p95_ms": 0.137708,
+        "max_ms": 0.587542
+      }
+    }
+  ],
+  "construction_timing_method": "Measure only G.build with performance.now(), excluding random initialization, engine createLevel and certificate replay. No explicit warm-up. Percentiles use sorted sample indices floor(n * .5) and min(n - 1, floor(n * .95)).",
+  "runtime": {
+    "node": "v26.9.0",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "carry_window_definition": "First80 contains stages whose start / total < 0.8; Last20 contains stages whose start / total >= 0.8. Variable stage length means the latter need not contain exactly 20% of actions.",
+  "limitation": "This verifies known legal routes from the starting boards, not human win rate or solvability after arbitrary choices. Timing is local construction performance, not mobile rendering performance."
+}
