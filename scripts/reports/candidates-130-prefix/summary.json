@@ -1,0 +1,248 @@
+{
+  "policy": "visible3-two-ply-v1",
+  "prefix": "aq-difficulty-v3-20261105",
+  "start": 0,
+  "countPerCandidate": 300,
+  "threshold": 130,
+  "candidates": [
+    {
+      "id": "head-exclusion-tail2-7-4-1",
+      "threshold": 287,
+      "wins": 39,
+      "outcomes": {
+        "lost": 261,
+        "won": 39
+      },
+      "mean": 134.31666666666666,
+      "median": 130,
+      "blocks10": "30/30",
+      "block10Distribution": {
+        "8": 3,
+        "9": 7,
+        "10": 20
+      },
+      "blocks30": "0/10",
+      "block30Distribution": {
+        "2": 3,
+        "3": 1,
+        "4": 1,
+        "5": 4,
+        "6": 1
+      },
+      "seconds": 6.203590417,
+      "construction": {
+        "boards": 300,
+        "failures": [],
+        "prefixAttempts": 749,
+        "prefixBlocked": 449,
+        "tailAttempts": 909,
+        "tailRejected": 160,
+        "maxPrefixAttempts": 15,
+        "maxTailAttempts": 19
+      }
+    },
+    {
+      "id": "head-exclusion-tail2-9-3-1",
+      "threshold": 288,
+      "wins": 26,
+      "outcomes": {
+        "lost": 274,
+        "won": 26
+      },
+      "mean": 132.86666666666667,
+      "median": 130,
+      "blocks10": "30/30",
+      "block10Distribution": {
+        "8": 1,
+        "9": 10,
+        "10": 19
+      },
+      "blocks30": "1/10",
+      "block30Distribution": {
+        "1": 1,
+        "2": 5,
+        "3": 2,
+        "4": 1,
+        "5": 1
+      },
+      "seconds": 6.23130325,
+      "construction": {
+        "boards": 300,
+        "failures": [],
+        "prefixAttempts": 648,
+        "prefixBlocked": 348,
+        "tailAttempts": 825,
+        "tailRejected": 177,
+        "maxPrefixAttempts": 10,
+        "maxTailAttempts": 13
+      }
+    },
+    {
+      "id": "head-exclusion-tail2-9-2-1",
+      "threshold": 287,
+      "wins": 26,
+      "outcomes": {
+        "lost": 274,
+        "won": 26
+      },
+      "mean": 132.96666666666667,
+      "median": 130,
+      "blocks10": "30/30",
+      "block10Distribution": {
+        "8": 2,
+        "9": 9,
+        "10": 19
+      },
+      "blocks30": "2/10",
+      "block30Distribution": {
+        "1": 2,
+        "2": 2,
+        "3": 4,
+        "4": 2
+      },
+      "seconds": 6.295421415999999,
+      "construction": {
+        "boards": 300,
+        "failures": [],
+        "prefixAttempts": 607,
+        "prefixBlocked": 307,
+        "tailAttempts": 747,
+        "tailRejected": 140,
+        "maxPrefixAttempts": 9,
+        "maxTailAttempts": 12
+      }
+    },
+    {
+      "id": "head-exclusion-tail1-7-4-1",
+      "error": "Error: Prefix construction exceeded 1000 retries for seed aq-difficulty-v3-20261105:0\n    at Object.createLevel ([temporary]/animal-queue-difficulty-candidates.cjs:105:11)\n    at runGame ([project]/scripts/simulate.cjs:126:80)\n    at runBatch ([project]/scripts/simulate.cjs:207:30)\n    at Object.<anonymous> ([temporary]/run-animal-queue-candidates.cjs:14:20)\n    at Module._compile (node:internal/modules/cjs/loader:1956:14)\n    at Object..js (node:internal/modules/cjs/loader:2096:10)\n    at Module.load (node:internal/modules/cjs/loader:1678:32)\n    at Module._load (node:internal/modules/cjs/loader:1470:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)",
+      "construction": {
+        "boards": 0,
+        "failures": [
+          "aq-difficulty-v3-20261105:0"
+        ],
+        "prefixAttempts": 0,
+        "prefixBlocked": 0,
+        "tailAttempts": 0,
+        "tailRejected": 0,
+        "maxPrefixAttempts": 0,
+        "maxTailAttempts": 0,
+        "attemptsBySeed": []
+      }
+    },
+    {
+      "id": "unique-tail2-7-4-1",
+      "threshold": 300,
+      "wins": 50,
+      "outcomes": {
+        "lost": 250,
+        "won": 50
+      },
+      "mean": 136.63333333333333,
+      "median": 130,
+      "blocks10": "30/30",
+      "block10Distribution": {
+        "10": 30
+      },
+      "blocks30": "0/10",
+      "block30Distribution": {
+        "2": 1,
+        "5": 6,
+        "6": 3
+      },
+      "seconds": 4.5482932919999985,
+      "construction": {
+        "boards": 300,
+        "failures": [],
+        "prefixAttempts": 1428,
+        "prefixBlocked": 1128,
+        "tailAttempts": 1795,
+        "tailRejected": 367,
+        "maxPrefixAttempts": 42,
+        "maxTailAttempts": 52
+      }
+    },
+    {
+      "id": "unique-tail2-9-3-1",
+      "threshold": 300,
+      "wins": 23,
+      "outcomes": {
+        "lost": 277,
+        "won": 23
+      },
+      "mean": 133.91666666666666,
+      "median": 130,
+      "blocks10": "30/30",
+      "block10Distribution": {
+        "10": 30
+      },
+      "blocks30": "4/10",
+      "block30Distribution": {
+        "1": 4,
+        "2": 3,
+        "4": 2,
+        "5": 1
+      },
+      "seconds": 4.513404500000001,
+      "construction": {
+        "boards": 300,
+        "failures": [],
+        "prefixAttempts": 1275,
+        "prefixBlocked": 975,
+        "tailAttempts": 1615,
+        "tailRejected": 340,
+        "maxPrefixAttempts": 31,
+        "maxTailAttempts": 36
+      }
+    },
+    {
+      "id": "unique-tail2-9-2-1",
+      "threshold": 300,
+      "wins": 23,
+      "outcomes": {
+        "lost": 277,
+        "won": 23
+      },
+      "mean": 133.81666666666666,
+      "median": 130,
+      "blocks10": "30/30",
+      "block10Distribution": {
+        "10": 30
+      },
+      "blocks30": "2/10",
+      "block30Distribution": {
+        "1": 2,
+        "2": 4,
+        "3": 3,
+        "4": 1
+      },
+      "seconds": 4.542162541999998,
+      "construction": {
+        "boards": 300,
+        "failures": [],
+        "prefixAttempts": 1265,
+        "prefixBlocked": 965,
+        "tailAttempts": 1588,
+        "tailRejected": 323,
+        "maxPrefixAttempts": 23,
+        "maxTailAttempts": 29
+      }
+    },
+    {
+      "id": "unique-tail1-7-4-1",
+      "error": "Error: Prefix construction exceeded 1000 retries for seed aq-difficulty-v3-20261105:0\n    at Object.createLevel ([temporary]/animal-queue-difficulty-candidates.cjs:105:11)\n    at runGame ([project]/scripts/simulate.cjs:126:80)\n    at runBatch ([project]/scripts/simulate.cjs:207:30)\n    at Object.<anonymous> ([temporary]/run-animal-queue-candidates.cjs:14:20)\n    at Module._compile (node:internal/modules/cjs/loader:1956:14)\n    at Object..js (node:internal/modules/cjs/loader:2096:10)\n    at Module.load (node:internal/modules/cjs/loader:1678:32)\n    at Module._load (node:internal/modules/cjs/loader:1470:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)",
+      "construction": {
+        "boards": 0,
+        "failures": [
+          "aq-difficulty-v3-20261105:0"
+        ],
+        "prefixAttempts": 0,
+        "prefixBlocked": 0,
+        "tailAttempts": 0,
+        "tailRejected": 0,
+        "maxPrefixAttempts": 0,
+        "maxTailAttempts": 0,
+        "attemptsBySeed": []
+      }
+    }
+  ]
+}

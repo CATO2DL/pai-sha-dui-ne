@@ -1,0 +1,21 @@
+{
+  "config": {
+    "id": "head-exclusion-tail2-30-2-1",
+    "unique": false,
+    "tailLanes": 2,
+    "tailWeights": [
+      30,
+      2,
+      1
+    ]
+  },
+  "prefix": "aq-holdout-v4-20261105",
+  "start": 0,
+  "count": 3000,
+  "threshold": 130,
+  "tiePrefix": "independent-policy-ties-v1",
+  "policy": "visible3-two-ply-v1",
+  "startedAt": "2026-11-04T13:06:11.939Z",
+  "candidateSourceSha256": "e46b30b6b0207a47e8f19c596ec98be3fa751d23c26ed5d404dafa984d8ec620",
+  "simulatorSha256": "54f21bf65bd46403b302371551dec8c1e142e5554b499851e6d8737e90c06014"
+}

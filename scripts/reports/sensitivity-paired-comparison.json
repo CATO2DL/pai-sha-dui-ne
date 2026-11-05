@@ -1,0 +1,20 @@
+{
+  "sameSeeds": "aq-holdout-v4-20261105",
+  "range": [
+    0,
+    299
+  ],
+  "twoPly": {
+    "reached130": 293,
+    "wins": 3,
+    "meanCleared": 129.76666666666668
+  },
+  "noLookahead": {
+    "reached130": 284,
+    "wins": 2,
+    "meanCleared": 129.46666666666667
+  },
+  "higherClearedWithTwoPly": 23,
+  "higherClearedWithoutLookahead": 9,
+  "tied": 268
+}

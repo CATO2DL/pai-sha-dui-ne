@@ -1,0 +1,340 @@
+{
+  "review_date": "2026-11-05",
+  "animal_and_movement_clips": [
+    {
+      "species": [
+        "sheep"
+      ],
+      "file": "sheep.wav",
+      "title": "Sheep Baa",
+      "author": "mikewest; edited by AntumDeluge",
+      "source": "https://opengameart.org/content/sheep-baa",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal recording",
+      "source_sha256": "88618dd49eaadaeea8950a613e75588cccecb39b699e289004dd56d1f3aef9de",
+      "excerpt_seconds": [
+        0.0,
+        0.73
+      ],
+      "duration_seconds": 0.73,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "dog"
+      ],
+      "file": "dog.wav",
+      "title": "Puppy Bark / Bark.ogg",
+      "author": "moffet; edited by AntumDeluge; collection by Technopeasant",
+      "source": "https://freesound.org/people/AntumDeluge/sounds/583142/",
+      "collection": "https://opengameart.org/content/baby-animals-sounds-pack",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "dog recording, previously edited to sound smaller",
+      "source_sha256": "63b3bf366bc9be26f8f29be2460ae60f8efe898347a00c570552a2ffd5467f59",
+      "excerpt_seconds": [
+        0.0,
+        0.232426
+      ],
+      "duration_seconds": 0.232426,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "pig"
+      ],
+      "file": "pig.wav",
+      "title": "Piglet_Squeal_01 / Squeal.ogg",
+      "author": "wwstudioswastaken (previously Foleyhaven); collection by Technopeasant",
+      "source": "https://freesound.org/people/wwstudioswastaken/sounds/618483/",
+      "collection": "https://opengameart.org/content/baby-animals-sounds-pack",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal recording",
+      "source_sha256": "d6bc2dbd13accc6d211ad390505392563cc18883805f1e6011fe96b4cd0c940a",
+      "excerpt_seconds": [
+        0.08,
+        0.68
+      ],
+      "duration_seconds": 0.6,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "cat"
+      ],
+      "file": "cat-real.wav",
+      "title": "Cat Purr & Meow / cat_softmew.wav",
+      "author": "Kerzoven",
+      "source": "https://opengameart.org/content/cat-purr-meow",
+      "download": "https://opengameart.org/sites/default/files/cat_softmew.wav",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal recording",
+      "source_sha256": "7de9fed4401b677ccbf072781182857d875093a8e9b5727fc21b38028cfd5a90",
+      "excerpt_seconds": [
+        0.33,
+        1.05
+      ],
+      "duration_seconds": 0.72,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "cow"
+      ],
+      "file": "cow-real.wav",
+      "title": "Cow moo #1",
+      "author": "spurioustransients",
+      "source": "https://freesound.org/people/spurioustransients/sounds/513559/",
+      "download": "https://cdn.freesound.org/previews/513/513559_2898771-lq.mp3",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal field recording",
+      "source_sha256": "c1b4bec38eea6839b6c169d70b72493d0e9139d8158c907cc9afcb156a8600ea",
+      "excerpt_seconds": [
+        5.15,
+        6.05
+      ],
+      "duration_seconds": 0.9,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "duck"
+      ],
+      "file": "duck-real.wav",
+      "title": "Duck Quack",
+      "author": "gibarroule; preview trimmed/levelled by TinyFingers",
+      "source": "https://freesound.org/people/gibarroule/sounds/365133/",
+      "mirror": "https://tinyfingers.net/games/animal-sounds",
+      "download": "https://tinyfingers.net/game-assets/animal-sounds/duck.mp3",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal field recording",
+      "source_sha256": "b42373aef0a473c0e179e415d843068ade21c82307a7bdba0303d2caebadcddd",
+      "excerpt_seconds": [
+        0.0,
+        0.43
+      ],
+      "duration_seconds": 0.43,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "elephant"
+      ],
+      "file": "elephant-real.wav",
+      "title": "Elephant voice - trumpeting",
+      "author": "தகவலுழவன் (Info-farmer)",
+      "source": "https://commons.wikimedia.org/wiki/File:Elephant_voice_-_trumpeting.ogg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/4/40/Elephant_voice_-_trumpeting.ogg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal recording",
+      "source_sha256": "e5f3120e5eaca87cc080bbf57bd185c96d52fd0f63cc1dfe33228c8bfa29f3bc",
+      "excerpt_seconds": [
+        0.04,
+        0.94
+      ],
+      "duration_seconds": 0.9,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "penguin"
+      ],
+      "file": "penguin-real.wav",
+      "title": "Penguin Sounds / penguin_01.ogg",
+      "author": "Bidone; noise reduction and editing by AntumDeluge",
+      "source": "https://opengameart.org/content/penguin-sounds",
+      "original": "https://freesound.org/people/Bidone/sounds/66150/",
+      "download": "https://opengameart.org/sites/default/files/penguin_01.ogg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal zoo recording",
+      "source_sha256": "d983bc83f13d544df19eebd2d0f43b9ef8865bcf736e1263f020291f6f175767",
+      "excerpt_seconds": [
+        0.0,
+        0.463991
+      ],
+      "duration_seconds": 0.463991,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "panda"
+      ],
+      "file": "panda-chirp.wav",
+      "title": "S2 Audio. Male chirp. Influence of season and social context on male giant panda vocal behaviour (2019)",
+      "author": "Benjamin D. Charlton, Megan A. Owen, Xiaoping Zhou, Hemin Zhang, Ronald R. Swaisgood",
+      "source": "https://doi.org/10.1371/journal.pone.0225772",
+      "download": "https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0225772.s002&type=supplementary",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "kind": "animal research recording",
+      "copyright": "Copyright 2019 Charlton et al.; attribution retained; no endorsement implied.",
+      "source_sha256": "b0935dba315bd5749111ab8f0f091cc8c5bd41edf3e77e352ec326365e383c94",
+      "excerpt_seconds": [
+        0,
+        0.426667
+      ],
+      "duration_seconds": 0.426667,
+      "changes": "Full call retained; mono 44.1kHz PCM16 WAV; DC removal; peak normalization to at most .72; 6ms fade-in and 20ms fade-out; no pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "fox"
+      ],
+      "file": "fox-real.wav",
+      "title": "Fox_noise.mp3",
+      "author": "janneair",
+      "source": "https://freesound.org/people/janneair/sounds/192518/",
+      "download": "https://cdn.freesound.org/previews/192/192518_2883376-hq.mp3",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "animal field recording",
+      "source_sha256": "820dec7fd1639ee43d440204a07d11099d655df1278580f493992f67aaf3df0a",
+      "excerpt_seconds": [
+        7.92,
+        8.77
+      ],
+      "duration_seconds": 0.85,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "chicken"
+      ],
+      "file": "chicken-real.wav",
+      "title": "Hen announcing she's lain an egg",
+      "author": "alys; archived from PDSounds by Fæ",
+      "source": "https://commons.wikimedia.org/wiki/File:Hen_announcing_shes_lain_an_egg.ogg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/4/44/Hen_announcing_shes_lain_an_egg.ogg",
+      "license": "Public domain dedication",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "kind": "animal recording",
+      "source_sha256": "ee35b6771854d44ded26f20616d9777b0aedfe6f7764af5d18a621e136fa077f",
+      "excerpt_seconds": [
+        4.35,
+        4.95
+      ],
+      "duration_seconds": 0.6,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "frog"
+      ],
+      "file": "frog-real.wav",
+      "title": "Frosch",
+      "author": "Ammoniumnitrat",
+      "source": "https://commons.wikimedia.org/wiki/File:Frosch.ogv",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/2/24/Frosch.ogv",
+      "license": "Public domain dedication",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "kind": "animal garden-pond recording",
+      "source_sha256": "af441018f8bc4e995528493e76cecb86f7459808bfac845ceeb6159d9f681ae9",
+      "excerpt_seconds": [
+        3.87,
+        4.49
+      ],
+      "duration_seconds": 0.62,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "rabbit",
+        "raccoon",
+        "capybara"
+      ],
+      "file": "soft-step.wav",
+      "title": "Fantozzi Footsteps / Fantozzi-SandL1.flac",
+      "author": "Fantozzi; collected by qubodup",
+      "source": "https://opengameart.org/content/fantozzis-footsteps-grasssand-stone",
+      "download": "https://opengameart.org/sites/default/files/Fantozzi-footsteps.7z",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "neutral movement foley, NOT an animal vocalisation",
+      "source_sha256": "93a2630579a82507e3c6ceab9b012f71a50cf8922f4beadb14057dcc0636b099",
+      "excerpt_seconds": [
+        0.0,
+        0.24
+      ],
+      "duration_seconds": 0.24,
+      "changes": "Mono PCM WAV; excerpt as listed; DC removal; peak normalization (gain cap 10x); 6ms fade in and 35ms fade out; no added voice or pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "turtle"
+      ],
+      "file": "turtle-shell.wav",
+      "title": "Wooden dice on wooden table / Holzwürfel_auf_Holztisch_2.flac",
+      "author": "Wuzzy",
+      "source": "https://opengameart.org/content/wooden-dice-on-wodden-table-roll",
+      "download": "https://opengameart.org/sites/default/files/Holzw%C3%BCrfel_auf_Holztisch_2.flac",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "kind": "Cartoon turtle shell/movement foley from a wooden dice on a wooden table; not a turtle call.",
+      "source_sha256": "89cb8f40136b462612138b8b65cd7e467c6a9895a1d72b70f5eac1e3d24e136c",
+      "output_sha256": "2b2395e61811c80d54238eb3d09d4a444f2627d9ac1b4a530b1c7a1aff539461",
+      "excerpt_seconds": [
+        0,
+        0.075
+      ],
+      "duration_seconds": 0.3,
+      "processing": {
+        "source_excerpt_seconds": [
+          0,
+          0.075
+        ],
+        "channels": "stereo arithmetic mean to mono",
+        "dc_removal": "subtract full-source mean",
+        "filters": [
+          {
+            "type": "RBJ highpass",
+            "frequency_hz": 80,
+            "order": 2,
+            "Q": 0.7071067811865476
+          },
+          {
+            "type": "RBJ lowpass",
+            "frequency_hz": 1200,
+            "order": 2,
+            "Q": 0.7071067811865476
+          }
+        ],
+        "envelope_seconds": {
+          "fade_in": 0.002,
+          "fade_out": 0.015
+        },
+        "repeat": {
+          "count": 2,
+          "second_start_seconds": 0.145,
+          "second_gain": 0.65
+        },
+        "peak_normalization": 0.5,
+        "normalization_gain": 2.1483038666375722,
+        "pitch_change": false,
+        "output_seconds": 0.3,
+        "output_format": "44100 Hz mono PCM16 WAV"
+      },
+      "changes": "First wooden tap isolated; mono; DC removal; 80 Hz high-pass and 1200 Hz low-pass; 2ms fade-in and 15ms fade-out; repeated at .145s with .65 gain; normalized to .5; padded to .3s; no pitch shift. Runtime may remove leading silence and apply gain/fade.",
+      "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    }
+  ]
+}

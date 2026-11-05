@@ -1,0 +1,304 @@
+{
+  "policy": "visible3-two-ply-v1",
+  "prefix": "aq-difficulty-v3-20261105",
+  "start": 0,
+  "plannedCountPerCandidate": 300,
+  "thresholdAnimals": 130,
+  "selectedRecommendation": "head-exclusion-tail2-30-2-1",
+  "caveat": "All calibration candidates retained, including construction failures. Holdout not inspected. Synthetic policy outcomes do not establish human win rates or guarantee every random 10/30-game block.",
+  "candidates": [
+    {
+      "id": "head-exclusion-tail1-7-4-1",
+      "report": "head-exclusion-tail1-7-4-1.json",
+      "completedBoards": 0,
+      "error": "Error: Prefix construction exceeded 1000 retries for seed aq-difficulty-v3-20261105:0",
+      "constructionFailures": [
+        "aq-difficulty-v3-20261105:0"
+      ]
+    },
+    {
+      "id": "head-exclusion-tail2-30-2-1",
+      "config": {
+        "tailLanes": 2,
+        "tailWeights": [
+          30,
+          2,
+          1
+        ],
+        "unique": false,
+        "id": "head-exclusion-tail2-30-2-1"
+      },
+      "report": "head-exclusion-tail2-30-2-1.json",
+      "count": 300,
+      "reached130": 290,
+      "wins": 3,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 10,
+      "blocks30Total": 10,
+      "meanCleared": 129.8,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 9,
+      "constructionFailures": []
+    },
+    {
+      "id": "head-exclusion-tail2-7-4-1",
+      "config": {
+        "id": "head-exclusion-tail2-7-4-1",
+        "unique": false,
+        "tailLanes": 2,
+        "tailWeights": [
+          7,
+          4,
+          1
+        ]
+      },
+      "report": "head-exclusion-tail2-7-4-1.json",
+      "count": 300,
+      "reached130": 287,
+      "wins": 39,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 0,
+      "blocks30Total": 10,
+      "meanCleared": 134.31666666666666,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 15,
+      "constructionFailures": []
+    },
+    {
+      "id": "head-exclusion-tail2-9-2-1",
+      "config": {
+        "id": "head-exclusion-tail2-9-2-1",
+        "unique": false,
+        "tailLanes": 2,
+        "tailWeights": [
+          9,
+          2,
+          1
+        ]
+      },
+      "report": "head-exclusion-tail2-9-2-1.json",
+      "count": 300,
+      "reached130": 287,
+      "wins": 26,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 2,
+      "blocks30Total": 10,
+      "meanCleared": 132.96666666666667,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 9,
+      "constructionFailures": []
+    },
+    {
+      "id": "head-exclusion-tail2-9-3-1",
+      "config": {
+        "id": "head-exclusion-tail2-9-3-1",
+        "unique": false,
+        "tailLanes": 2,
+        "tailWeights": [
+          9,
+          3,
+          1
+        ]
+      },
+      "report": "head-exclusion-tail2-9-3-1.json",
+      "count": 300,
+      "reached130": 288,
+      "wins": 26,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 1,
+      "blocks30Total": 10,
+      "meanCleared": 132.86666666666667,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 10,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail1-7-4-1",
+      "report": "unique-tail1-7-4-1.json",
+      "completedBoards": 0,
+      "error": "Error: Prefix construction exceeded 1000 retries for seed aq-difficulty-v3-20261105:0",
+      "constructionFailures": [
+        "aq-difficulty-v3-20261105:0"
+      ]
+    },
+    {
+      "id": "unique-tail2-15-2-1",
+      "config": {
+        "id": "unique-tail2-15-2-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          15,
+          2,
+          1
+        ]
+      },
+      "report": "unique-tail2-15-2-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 9,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 8,
+      "blocks30Total": 10,
+      "meanCleared": 131.71666666666667,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 22,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail2-20-2-1",
+      "config": {
+        "id": "unique-tail2-20-2-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          20,
+          2,
+          1
+        ]
+      },
+      "report": "unique-tail2-20-2-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 5,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 9,
+      "blocks30Total": 10,
+      "meanCleared": 131.15,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 25,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail2-30-1-1",
+      "config": {
+        "id": "unique-tail2-30-1-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          30,
+          1,
+          1
+        ]
+      },
+      "report": "unique-tail2-30-1-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 4,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 10,
+      "blocks30Total": 10,
+      "meanCleared": 130.86666666666667,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 18,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail2-30-2-1",
+      "config": {
+        "id": "unique-tail2-30-2-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          30,
+          2,
+          1
+        ]
+      },
+      "report": "unique-tail2-30-2-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 2,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 10,
+      "blocks30Total": 10,
+      "meanCleared": 130.8,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 24,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail2-7-4-1",
+      "config": {
+        "id": "unique-tail2-7-4-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          7,
+          4,
+          1
+        ]
+      },
+      "report": "unique-tail2-7-4-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 50,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 0,
+      "blocks30Total": 10,
+      "meanCleared": 136.63333333333333,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 42,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail2-9-2-1",
+      "config": {
+        "id": "unique-tail2-9-2-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          9,
+          2,
+          1
+        ]
+      },
+      "report": "unique-tail2-9-2-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 23,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 2,
+      "blocks30Total": 10,
+      "meanCleared": 133.81666666666666,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 23,
+      "constructionFailures": []
+    },
+    {
+      "id": "unique-tail2-9-3-1",
+      "config": {
+        "id": "unique-tail2-9-3-1",
+        "unique": true,
+        "tailLanes": 2,
+        "tailWeights": [
+          9,
+          3,
+          1
+        ]
+      },
+      "report": "unique-tail2-9-3-1.json",
+      "count": 300,
+      "reached130": 300,
+      "wins": 23,
+      "blocks10Passed": 30,
+      "blocks10Total": 30,
+      "blocks30Passed": 4,
+      "blocks30Total": 10,
+      "meanCleared": 133.91666666666666,
+      "medianCleared": 130,
+      "maxPrefixAttempts": 31,
+      "constructionFailures": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "constructionPrefix": "aq-ramp-construction-v3-20261105",
+  "start": 0,
+  "count": 10000,
+  "generatorVersion": 3,
+  "failures": 0,
+  "stock": "8 species x 30 = 240, 6 nonempty queues, group counts 1..4, no adjacent same-species groups",
+  "generationTimingMs": {
+    "mean": 0.8083096401000027,
+    "p50": 0.5703330000001188,
+    "p95": 2.2492919999999685,
+    "p99": 3.5140000000001237,
+    "max": 51.04662499999995,
+    "worst": {
+      "seed": "aq-ramp-construction-v3-20261105:5893",
+      "ms": 51.04662499999995
+    }
+  },
+  "holdoutMatch": {
+    "prefix": "aq-ramp-holdout-v3-20261105",
+    "start": 0,
+    "count": 1000,
+    "exactQueues": true
+  },
+  "elapsedSeconds": 9.967010499999999,
+  "caveat": "Construction-only checks; no gameplay outcomes used for acceptance."
+}

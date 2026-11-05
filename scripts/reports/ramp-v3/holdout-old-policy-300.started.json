@@ -1,0 +1,7 @@
+{
+  "policy": "visible3-two-ply-v1",
+  "prefix": "aq-ramp-holdout-v3-20261105",
+  "start": 0,
+  "count": 300,
+  "purpose": "Old frozen policy sensitivity; not used to tune parameters"
+}

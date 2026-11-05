@@ -1,0 +1,147 @@
+排啥队呢 — 当前实际使用的音频来源与授权
+核对日期：2026-11-05
+
+动物叫声使用对应物种的录音，不再用人声口技或另一种动物的变调声音代替。兔、浣熊、水豚使用轻脚步动作声，乌龟使用木质轻敲作为卡通壳/动作拟音，不声称是这些动物的叫声。狗的源文件本身是基于犬吠加工的小狗声，游戏不再叠加变调。
+所有动物/动作片段转为单声道 PCM WAV 以兼容手机。具体截取、源文件哈希及下载地址见 audio-sources.json。
+以下资源分别适用列出的许可；熊猫为 CC BY 4.0，其余动物/动作声为 CC0 或作者公有领域声明。
+
+卷角羊 — Sheep Baa
+文件：audio/sheep.wav
+作者：mikewest; edited by AntumDeluge
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/sheep-baa
+改动：截取 0.000–0.730 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+狗 — Puppy Bark / Bark.ogg
+文件：audio/dog.wav
+作者：moffet; edited by AntumDeluge; collection by Technopeasant
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://freesound.org/people/AntumDeluge/sounds/583142/
+collection：https://opengameart.org/content/baby-animals-sounds-pack
+改动：截取 0.000–0.232 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+猪 — Piglet_Squeal_01 / Squeal.ogg
+文件：audio/pig.wav
+作者：wwstudioswastaken (previously Foleyhaven); collection by Technopeasant
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://freesound.org/people/wwstudioswastaken/sounds/618483/
+collection：https://opengameart.org/content/baby-animals-sounds-pack
+改动：截取 0.080–0.680 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+猫 — Cat Purr & Meow / cat_softmew.wav
+文件：audio/cat-real.wav
+作者：Kerzoven
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/cat-purr-meow
+download：https://opengameart.org/sites/default/files/cat_softmew.wav
+改动：截取 0.330–1.050 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+牛 — Cow moo #1
+文件：audio/cow-real.wav
+作者：spurioustransients
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://freesound.org/people/spurioustransients/sounds/513559/
+download：https://cdn.freesound.org/previews/513/513559_2898771-lq.mp3
+改动：截取 5.150–6.050 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+鸭 — Duck Quack
+文件：audio/duck-real.wav
+作者：gibarroule; preview trimmed/levelled by TinyFingers
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://freesound.org/people/gibarroule/sounds/365133/
+mirror：https://tinyfingers.net/games/animal-sounds
+download：https://tinyfingers.net/game-assets/animal-sounds/duck.mp3
+改动：截取 0.000–0.430 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+大象 — Elephant voice - trumpeting
+文件：audio/elephant-real.wav
+作者：தகவலுழவன் (Info-farmer)
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://commons.wikimedia.org/wiki/File:Elephant_voice_-_trumpeting.ogg
+download：https://upload.wikimedia.org/wikipedia/commons/4/40/Elephant_voice_-_trumpeting.ogg
+改动：截取 0.040–0.940 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+企鹅 — Penguin Sounds / penguin_01.ogg
+文件：audio/penguin-real.wav
+作者：Bidone; noise reduction and editing by AntumDeluge
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/penguin-sounds
+original：https://freesound.org/people/Bidone/sounds/66150/
+download：https://opengameart.org/sites/default/files/penguin_01.ogg
+改动：截取 0.000–0.464 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+熊猫 — S2 Audio. Male chirp. Influence of season and social context on male giant panda vocal behaviour (2019)
+文件：audio/panda-chirp.wav
+作者：Benjamin D. Charlton, Megan A. Owen, Xiaoping Zhou, Hemin Zhang, Ronald R. Swaisgood
+许可：CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/
+来源：https://doi.org/10.1371/journal.pone.0225772
+download：https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0225772.s002&type=supplementary
+改动：保留完整 0.000–0.427 秒短鸣，转单声道 44.1kHz PCM WAV，去直流偏置、统一音量、6ms 淡入/20ms 淡出；游戏保持源音高，并可能去除开头静音和再次淡入淡出。
+Copyright 2019 Charlton et al.; attribution retained; no endorsement implied.
+
+狐狸 — Fox_noise.mp3
+文件：audio/fox-real.wav
+作者：janneair
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://freesound.org/people/janneair/sounds/192518/
+download：https://cdn.freesound.org/previews/192/192518_2883376-hq.mp3
+改动：截取 7.920–8.770 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+鸡 — Hen announcing she's lain an egg
+文件：audio/chicken-real.wav
+作者：alys; archived from PDSounds by Fæ
+许可：Public domain dedication — https://creativecommons.org/publicdomain/mark/1.0/
+来源：https://commons.wikimedia.org/wiki/File:Hen_announcing_shes_lain_an_egg.ogg
+download：https://upload.wikimedia.org/wikipedia/commons/4/44/Hen_announcing_shes_lain_an_egg.ogg
+改动：截取 4.350–4.950 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+青蛙 — Frosch
+文件：audio/frog-real.wav
+作者：Ammoniumnitrat
+许可：Public domain dedication — https://creativecommons.org/publicdomain/mark/1.0/
+来源：https://commons.wikimedia.org/wiki/File:Frosch.ogv
+download：https://upload.wikimedia.org/wikipedia/commons/2/24/Frosch.ogv
+改动：截取 3.870–4.490 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+兔,浣熊,水豚 — Fantozzi Footsteps / Fantozzi-SandL1.flac
+文件：audio/soft-step.wav
+作者：Fantozzi; collected by qubodup
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/fantozzis-footsteps-grasssand-stone
+download：https://opengameart.org/sites/default/files/Fantozzi-footsteps.7z
+改动：截取 0.000–0.240 秒，转单声道 PCM WAV，去直流偏置、统一音量、6ms 淡入/35ms 淡出；游戏保持源音高，并可能去除开头静音。
+
+乌龟 — 木质轻敲壳/动作拟音（非乌龟叫声）
+文件：audio/turtle-shell.wav
+作者：Wuzzy
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/wooden-dice-on-wodden-table-roll
+download：https://opengameart.org/sites/default/files/Holzw%C3%BCrfel_auf_Holztisch_2.flac
+改动：取 0.000–0.075 秒第一下木质敲击，转单声道 44.1kHz PCM WAV、去直流偏置、80Hz 高通/1200Hz 低通、2ms 淡入/15ms 淡出；在 0.145 秒处以 65% 音量重复一次，整体归一化并补尾至 0.300 秒。保持源音高，游戏可能去除开头静音并再次淡入淡出。
+
+背景音乐 — Wacky Wobblings — Fupi
+文件：audio/music.ogg、audio/music.mp3
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/wacky-wobblings
+改动：主段循环播放、降低音量；原曲不变。
+
+操作/消除泡泡 — Pop sounds — EZduzziteh
+文件：audio/pop.wav、audio/move.wav
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/pop-sounds-0
+改动：裁短、淡出、音量调整；连消可升调。
+
+消除上扬/失败下降音 — Level up power up Coin get — WobbleBoxx Workshop
+文件：audio/rise.mp3（Coin01）、audio/lose.mp3（Downer01）
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/level-up-power-up-coin-get-13-sounds
+改动：失败音裁为0.78秒、淡出；失败不使用人声或口技。消除音裁短并可随连消升调。
+
+通关提示 — Sci-Fi Aliens and Cows Pack — qubodup
+文件：audio/win.wav（gameover-win）
+许可：CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+来源：https://opengameart.org/content/sci-fi-aliens-and-cows-pack
+改动：裁为0.75秒、淡出；仅作通关音效，不再用于动物叫声。
+
+角色母版为用户提供的已选定生成图，不属于这些音频许可。
+原资源库及其中的历史授权记录保持不变。

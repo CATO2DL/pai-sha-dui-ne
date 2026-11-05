@@ -1,0 +1,9 @@
+{
+  "rawGamesEqualReport": true,
+  "count": 1000,
+  "hashesStillMatch": true,
+  "generator3EqualFrozenRule3SnapshotSeeds": 1000,
+  "prefix": "aq-rule4-holdout-20261105",
+  "capacity": 7,
+  "checkedLiveTransitions": 746204
+}

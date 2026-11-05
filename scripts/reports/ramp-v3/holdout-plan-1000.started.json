@@ -1,0 +1,28 @@
+{
+  "id": "ramp6-240-overlap-tail4-16-3-1",
+  "config": {
+    "lanes": 6,
+    "total": 240,
+    "tailLanes": 4,
+    "tailWeights": [
+      16,
+      3,
+      1
+    ],
+    "easyFraction": 0.12,
+    "rampExponent": 1.6,
+    "quartetMax": 0.45,
+    "overlapPackets": true,
+    "id": "ramp6-240-overlap-tail4-16-3-1"
+  },
+  "policy": "visible3-one-clear-plan-v1",
+  "prefix": "aq-ramp-holdout-v3-20261105",
+  "start": 0,
+  "count": 1000,
+  "threshold": 195,
+  "tiePrefix": "independent-policy-ties-v1",
+  "startedAt": "2026-11-04T13:49:08.008Z",
+  "candidateSha256": "f6a0f3ae2b56e6b09c04af5caa0e0b80b309a33955e284108040db91c7a7fae7",
+  "policySha256": "fa0452a9552b18fffcf77c878d353128ddee89feb302231fca4c52db1c66c768",
+  "productionEngineSha256": "2925659c1f2048d39908043c68212588311e20c6d1e633d194181555306a85a0"
+}

@@ -1,0 +1,4154 @@
+{
+  "multipleSources": {
+    "seed": "migration-fixture:10",
+    "generatorVersion": 3,
+    "history": [
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 1
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 1
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 1
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 1
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      }
+    ],
+    "before": {
+      "buffer": [
+        {
+          "species": "chicken",
+          "count": 2
+        },
+        {
+          "species": "penguin",
+          "count": 3
+        },
+        {
+          "species": "fox",
+          "count": 3
+        },
+        {
+          "species": "panda",
+          "count": 4
+        }
+      ],
+      "queues": [
+        [
+          {
+            "species": "pig",
+            "count": 3
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          }
+        ],
+        [],
+        [
+          {
+            "species": "pig",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "fox",
+            "count": 2
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 2
+          }
+        ],
+        [],
+        [
+          {
+            "species": "pig",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          }
+        ]
+      ],
+      "cleared": 205,
+      "moves": 105
+    },
+    "origins": [
+      {
+        "species": "chicken",
+        "count": 2,
+        "origin": 1
+      },
+      {
+        "species": "penguin",
+        "count": 3,
+        "origin": 3
+      },
+      {
+        "species": "fox",
+        "count": 3,
+        "origin": 5
+      },
+      {
+        "species": "panda",
+        "count": 4,
+        "origin": 1
+      }
+    ],
+    "returned": [
+      {
+        "species": "fox",
+        "count": 1,
+        "origin": 5
+      },
+      {
+        "species": "panda",
+        "count": 4,
+        "origin": 1
+      }
+    ],
+    "after": {
+      "buffer": [
+        {
+          "species": "chicken",
+          "count": 2
+        },
+        {
+          "species": "penguin",
+          "count": 3
+        },
+        {
+          "species": "fox",
+          "count": 2
+        }
+      ],
+      "queues": [
+        [
+          {
+            "species": "pig",
+            "count": 3
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "panda",
+            "count": 4
+          },
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          }
+        ],
+        [],
+        [
+          {
+            "species": "pig",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "fox",
+            "count": 2
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 2
+          }
+        ],
+        [],
+        [
+          {
+            "species": "fox",
+            "count": 1
+          },
+          {
+            "species": "pig",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          }
+        ]
+      ],
+      "cleared": 205,
+      "moves": 105,
+      "status": "lost"
+    }
+  },
+  "multipleGroupsSameSource": {
+    "seed": "migration-fixture:12",
+    "generatorVersion": 3,
+    "history": [
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 1
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 1
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      }
+    ],
+    "before": {
+      "buffer": [
+        {
+          "species": "capybara",
+          "count": 4
+        },
+        {
+          "species": "chicken",
+          "count": 4
+        },
+        {
+          "species": "cat",
+          "count": 1
+        }
+      ],
+      "queues": [
+        [
+          {
+            "species": "cow",
+            "count": 2
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "capybara",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "cow",
+            "count": 2
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "cow",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          }
+        ],
+        [],
+        [],
+        [
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 2
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 3
+          }
+        ],
+        [
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          }
+        ]
+      ],
+      "cleared": 195,
+      "moves": 97
+    },
+    "origins": [
+      {
+        "species": "capybara",
+        "count": 4,
+        "origin": 1
+      },
+      {
+        "species": "chicken",
+        "count": 0,
+        "origin": 1
+      },
+      {
+        "species": "cat",
+        "count": 1,
+        "origin": 1
+      },
+      {
+        "species": "chicken",
+        "count": 0,
+        "origin": 1
+      }
+    ],
+    "returned": [
+      {
+        "species": "chicken",
+        "count": 1,
+        "origin": 1
+      },
+      {
+        "species": "cat",
+        "count": 1,
+        "origin": 1
+      }
+    ],
+    "after": {
+      "buffer": [
+        {
+          "species": "capybara",
+          "count": 4
+        },
+        {
+          "species": "chicken",
+          "count": 3
+        }
+      ],
+      "queues": [
+        [
+          {
+            "species": "cow",
+            "count": 2
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "capybara",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "cow",
+            "count": 2
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "chicken",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "cow",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          }
+        ],
+        [],
+        [],
+        [
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 2
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 3
+          }
+        ],
+        [
+          {
+            "species": "elephant",
+            "count": 1
+          },
+          {
+            "species": "cat",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "panda",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          },
+          {
+            "species": "penguin",
+            "count": 1
+          },
+          {
+            "species": "turtle",
+            "count": 1
+          }
+        ]
+      ],
+      "cleared": 195,
+      "moves": 97,
+      "status": "lost"
+    }
+  },
+  "reopensClosedSource": {
+    "seed": "migration-fixture:68",
+    "generatorVersion": 3,
+    "history": [
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "queue",
+          "index": 5
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 1
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 5
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 4
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 3
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "buffer"
+        },
+        "to": {
+          "type": "queue",
+          "index": 0
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 2
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 2
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 4
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "buffer"
+        },
+        "rulesVersion": 3
+      },
+      {
+        "from": {
+          "type": "queue",
+          "index": 0
+        },
+        "to": {
+          "type": "queue",
+          "index": 3
+        },
+        "rulesVersion": 3
+      }
+    ],
+    "before": {
+      "buffer": [
+        {
+          "species": "duck",
+          "count": 4
+        },
+        {
+          "species": "cow",
+          "count": 3
+        },
+        {
+          "species": "dog",
+          "count": 1
+        },
+        {
+          "species": "sheep",
+          "count": 1
+        }
+      ],
+      "queues": [
+        [],
+        [],
+        [
+          {
+            "species": "cow",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          },
+          {
+            "species": "duck",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "cow",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          }
+        ],
+        []
+      ],
+      "cleared": 215,
+      "moves": 122
+    },
+    "origins": [
+      {
+        "species": "duck",
+        "count": 4,
+        "origin": 2
+      },
+      {
+        "species": "cow",
+        "count": 3,
+        "origin": 4
+      },
+      {
+        "species": "dog",
+        "count": 1,
+        "origin": 0
+      },
+      {
+        "species": "sheep",
+        "count": 1,
+        "origin": 0
+      }
+    ],
+    "returned": [
+      {
+        "species": "dog",
+        "count": 1,
+        "origin": 0
+      },
+      {
+        "species": "sheep",
+        "count": 1,
+        "origin": 0
+      }
+    ],
+    "after": {
+      "buffer": [
+        {
+          "species": "duck",
+          "count": 4
+        },
+        {
+          "species": "cow",
+          "count": 3
+        }
+      ],
+      "queues": [
+        [
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          }
+        ],
+        [],
+        [
+          {
+            "species": "cow",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          },
+          {
+            "species": "duck",
+            "count": 1
+          },
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "cow",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          }
+        ],
+        [
+          {
+            "species": "dog",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          },
+          {
+            "species": "sheep",
+            "count": 1
+          },
+          {
+            "species": "rabbit",
+            "count": 1
+          }
+        ],
+        []
+      ],
+      "cleared": 215,
+      "moves": 122,
+      "status": "lost"
+    }
+  }
+}

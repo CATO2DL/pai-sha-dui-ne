@@ -1,0 +1,20 @@
+{
+  "startedAt": "2026-11-04T14:06:57.159Z",
+  "rulesVersion": 4,
+  "bufferCapacityAnimals": 7,
+  "capacityBeforeSettlement": true,
+  "partialStore": true,
+  "generatorVersion": 3,
+  "policy": "visible3-one-clear-plan-v1",
+  "policyUnchangedFromRules3": true,
+  "prefix": "aq-rule4-holdout-20261105",
+  "start": 0,
+  "count": 1000,
+  "threshold": 195,
+  "retuning": false,
+  "hashes": {
+    "dist/engine.js": "6e29fd8918dfeb41ab1c33411516554ca296cfb4ba16f7235a9f21047ae21066",
+    "scripts/ramp-policy-plan.cjs": "fa0452a9552b18fffcf77c878d353128ddee89feb302231fca4c52db1c66c768",
+    "scripts/simulate.cjs": "e6fafe0b9ce76f0dcb322c44cf2bdd2487383b59f414d50cbd141aafc2fa13d4"
+  }
+}
