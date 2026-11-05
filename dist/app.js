@@ -9,7 +9,7 @@
   const LEVEL_COUNT = LEVEL_IDS.length;
   const laneViews = new Map(), queueButtons = new Map();
   let boardLayout = '', friendRoster = '';
-  let state, selected = null, history = [], roundSpecies = [], resultTimer, comboTimer;
+  let state, selected = null, history = [], roundSpecies = [], resultTimer, advanceTimer, comboTimer;
   let lastClear = 0, comboCount = 0, hint = null;
   const name = id => sprites.get(id)?.name || id;
   const freshSeed = () => { const n = new Uint32Array(1); crypto.getRandomValues(n); return n[0].toString(36).toUpperCase(); };
@@ -31,10 +31,10 @@
   function save() {
     try { localStorage.setItem(SAVE_KEY, JSON.stringify({ version: 1, level: state.level, seed: state.seed, generatorVersion: state.generatorVersion, history, music: audio.musicEnabled, sfx: audio.sfxEnabled })); } catch (_) { /* Play remains available if storage is disabled. */ }
   }
-  function start(level, seed = freshSeed(), generatorVersion = E.GENERATOR_VERSION) {
-    clearTimeout(resultTimer); clearTimeout(comboTimer);
+  function start(level, seed = freshSeed(), generatorVersion = E.GENERATOR_VERSION, keepEffects = false) {
+    clearTimeout(resultTimer); clearTimeout(advanceTimer); clearTimeout(comboTimer);
     setLevelPickerOpen(false);
-    $('modal').close(); audio.stopEffects();
+    $('modal').close(); if (!keepEffects) audio.stopEffects();
     state = E.createLevel(level, seed, generatorVersion); selected = null; hint = null; history = [];
     lastClear = 0; comboCount = 0; $('combo').classList.remove('show');
     roundSpecies = [...new Set(state.queues.flatMap(q => q.map(g => g.species)))];
@@ -224,7 +224,7 @@
     }
     if (state.status !== 'playing') {
       if (state.status === 'won') audio.win(); else audio.lose();
-      resultTimer = setTimeout(showResult, 850);
+      scheduleResult();
     }
   }
   function invalid(source) { audio.invalid(); toast(source); }
@@ -244,9 +244,18 @@
     }
 
   }
+  function scheduleResult() {
+    clearTimeout(resultTimer); clearTimeout(advanceTimer);
+    if (state.status === 'won' && state.level < LEVEL_COUNT) {
+      const completed = state;
+      advanceTimer = setTimeout(() => {
+        if (state === completed) start(completed.level + 1, freshSeed(), E.GENERATOR_VERSION, true);
+      }, 600);
+    } else if (state.status !== 'playing') resultTimer = setTimeout(showResult, 850);
+  }
   function modal(html) { clearTimeout(resultTimer); $('modal-content').innerHTML = html; if (!$('modal').open) $('modal').showModal(); }
   function showResult() {
-    if (state.status === 'playing') return;
+    if (state.status === 'playing' || (state.status === 'won' && state.level < LEVEL_COUNT)) return;
     const won = state.status === 'won', nextLevel = Math.min(LEVEL_COUNT,state.level+1);
     modal(`<div class="result visual-result ${won?'':'retry-result'}" aria-label="${won?'通关':'再试一次'}"><div class="result-mark ${won?'won':'lost'}" aria-hidden="true">${won?'✦':'<span>✧</span><span>〰</span><span>✦</span>'}</div><div class="result-art">${sprite(won?'sheep':'capybara')}${sprite(won?'cat':'turtle')}</div><div class="result-actions"><button class="primary ${won?'':'retry-primary'}" id="result-primary" aria-label="${won ? state.level<LEVEL_COUNT ? `进入第${nextLevel}关` : '再玩第五关' : '再试一次，重开本局'}">${won?'→':'<span aria-hidden="true">↻</span> 再试一次'}</button><button class="secondary" id="result-secondary" aria-label="${won?'返回棋盘':'换一个盘面'}">${won?'✓':'⇄'}</button></div></div>`);
     $('result-primary').onclick = () => start(won ? nextLevel : state.level, won ? freshSeed() : state.seed, won ? E.GENERATOR_VERSION : state.generatorVersion);
@@ -294,7 +303,7 @@
   }; });
   $('modal-close').onclick = () => $('modal').close();
   $('modal').addEventListener('click', e => { if (e.target === $('modal')) { const r=$('modal').getBoundingClientRect(); if (e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) $('modal').close(); } });
-  $('credits-button').onclick = () => modal(`<h2>声音与小伙伴</h2><p>角色来自你提供的16种动物母版，动画由程序实现。</p><p>12种动物采用对应录音；兔、浣熊、水豚使用轻脚步声，乌龟使用轻敲壳的动作拟音。</p><p>背景音乐：Wacky Wobblings — Fupi（CC0）。</p><p>熊猫录音：Charlton 等，2019，<a href="https://doi.org/10.1371/journal.pone.0225772" target="_blank" rel="noopener">PLOS ONE 论文附录</a>，<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。已剪辑、转换格式和调整音量，保留源音高。</p><p>其他录音为CC0或公有领域，逐项作者、许可和剪辑记录见<a href="assets/CREDITS.txt" target="_blank" rel="noopener">完整声音来源</a>。</p>`);
+  $('credits-button').onclick = () => modal(`<h2>声音与小伙伴</h2><p>角色来自你提供的16种动物母版，动画由程序实现。</p><p>12种动物采用对应录音；兔、浣熊使用轻脚步声，乌龟使用轻敲壳的动作拟音；水豚按选定的 Squeal 配成卡通叫声。</p><p>胜利：battlecry2 — fvcalderan；失败：moo-notification — qubodup；水豚：Squeal — wwstudioswastaken，Technopeasant 汇集。均为 CC0，作为卡通配音使用。</p><p>背景音乐：Wacky Wobblings — Fupi（CC0）。</p><p>熊猫录音：Charlton 等，2019，<a href="https://doi.org/10.1371/journal.pone.0225772" target="_blank" rel="noopener">PLOS ONE 论文附录</a>，<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。已剪辑、转换格式和调整音量，保留源音高。</p><p>其他录音为CC0或公有领域，逐项作者、许可和剪辑记录见<a href="assets/CREDITS.txt" target="_blank" rel="noopener">完整声音来源</a>。</p>`);
   document.addEventListener('pointerdown', () => { if (!audio.unlocked) void audio.unlock(); }, { capture:true });
   document.addEventListener('keydown', e => {
     if (!audio.unlocked) void audio.unlock();
@@ -317,5 +326,5 @@
   new ResizeObserver(() => { if (state) { renderBoard(); renderBuffer(); } }).observe($('board'));
   $('five-demo').innerHTML = Array.from({length:5},(_,i)=>sprite('sheep','',`style="--r:${i%2?5:-5}deg"`)).join('')+'<span class="equals">✦</span>';
   $('scenery').innerHTML = Array.from({length:31},(_,i)=>`<span class="grass ${i%7===0?'flower':''}" style="left:${(i*37+5)%96}%;top:${(i*29+14)%89}%;--r:${i%2?15:-15}deg">${i%7===0?'✿':'⌁'}</span>`).join('');
-  if (!restore()) start(1, 'MEADOW'); else { render(); if (state.status !== 'playing') resultTimer=setTimeout(showResult,700); }
+  if (!restore()) start(1, 'MEADOW'); else { render(); if (state.status !== 'playing') scheduleResult(); }
 })();

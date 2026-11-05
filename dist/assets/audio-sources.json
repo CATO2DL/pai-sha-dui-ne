@@ -14,7 +14,7 @@
       "kind": "animal recording",
       "source_sha256": "88618dd49eaadaeea8950a613e75588cccecb39b699e289004dd56d1f3aef9de",
       "excerpt_seconds": [
-        0.0,
+        0,
         0.73
       ],
       "duration_seconds": 0.73,
@@ -35,7 +35,7 @@
       "kind": "dog recording, previously edited to sound smaller",
       "source_sha256": "63b3bf366bc9be26f8f29be2460ae60f8efe898347a00c570552a2ffd5467f59",
       "excerpt_seconds": [
-        0.0,
+        0,
         0.232426
       ],
       "duration_seconds": 0.232426,
@@ -120,7 +120,7 @@
       "kind": "animal field recording",
       "source_sha256": "b42373aef0a473c0e179e415d843068ade21c82307a7bdba0303d2caebadcddd",
       "excerpt_seconds": [
-        0.0,
+        0,
         0.43
       ],
       "duration_seconds": 0.43,
@@ -163,7 +163,7 @@
       "kind": "animal zoo recording",
       "source_sha256": "d983bc83f13d544df19eebd2d0f43b9ef8865bcf736e1263f020291f6f175767",
       "excerpt_seconds": [
-        0.0,
+        0,
         0.463991
       ],
       "duration_seconds": 0.463991,
@@ -258,8 +258,7 @@
     {
       "species": [
         "rabbit",
-        "raccoon",
-        "capybara"
+        "raccoon"
       ],
       "file": "soft-step.wav",
       "title": "Fantozzi Footsteps / Fantozzi-SandL1.flac",
@@ -271,7 +270,7 @@
       "kind": "neutral movement foley, NOT an animal vocalisation",
       "source_sha256": "93a2630579a82507e3c6ceab9b012f71a50cf8922f4beadb14057dcc0636b099",
       "excerpt_seconds": [
-        0.0,
+        0,
         0.24
       ],
       "duration_seconds": 0.24,
@@ -335,6 +334,145 @@
       },
       "changes": "First wooden tap isolated; mono; DC removal; 80 Hz high-pass and 1200 Hz low-pass; 2ms fade-in and 15ms fade-out; repeated at .145s with .65 gain; normalized to .5; padded to .3s; no pitch shift. Runtime may remove leading silence and apply gain/fade.",
       "checked": "Source description and license verified; decoded and waveform/level checked; no claim of human listening verification."
+    },
+    {
+      "species": [
+        "capybara"
+      ],
+      "file": "capybara-squeal.wav",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_resource_path": "audio/sfx/baby/preview/Squeal.ogg",
+      "source_sha256": "d6bc2dbd13accc6d211ad390505392563cc18883805f1e6011fe96b4cd0c940a",
+      "output_sha256": "8e4e6c135e557cea6e0abe7f67b98e18eba8d7c38f91f12d26c3024d7ffcf7e3",
+      "excerpt_seconds": [
+        0,
+        1.2009895833333333
+      ],
+      "duration_seconds": 1.2009895833333333,
+      "processing": {
+        "format": "PCM16 WAV",
+        "sample_rate_hz": 96000,
+        "channels": 1,
+        "source_frames": 115295,
+        "output_frames": 115295,
+        "trimming": false,
+        "pitch_change": false,
+        "normalization": false,
+        "fade": false
+      },
+      "changes": "Entire supplied file decoded to PCM16 WAV, preserving frame count, sample rate and channel count. No excerpt, pitch shift, normalization or fade. Runtime uses the complete decoded buffer at playbackRate 1; ordinary existing voice interruption, mute and lifecycle behavior remain unchanged.",
+      "checked": "Resource catalog, embedded metadata and source-page license checked; converted frame count and PCM16 quantization checked. No claim of human listening verification.",
+      "catalog_id": "baby-Squeal",
+      "title": "幼年动物 · Squeal / Piglet_Squeal_01",
+      "author": "Joshua Whitney (embedded ARTIST); wwstudioswastaken (previously Foleyhaven); collection by Technopeasant",
+      "source": "https://freesound.org/people/wwstudioswastaken/sounds/618483/",
+      "original_source": "https://freesound.org/people/Foleyhaven/sounds/618483/",
+      "collection": "https://opengameart.org/content/baby-animals-sounds-pack",
+      "kind": "User-selected cartoon capybara voice from a piglet recording; not a capybara field recording.",
+      "playback": {
+        "full_buffer": true,
+        "rate": 1,
+        "volume": 0.28
+      }
+    }
+  ],
+  "feedback_clips": [
+    {
+      "role": "win",
+      "file": "win-battlecry2.wav",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_resource_path": "audio/sfx/tiny/battlecry2.ogg",
+      "source_sha256": "1873d03b3b1a70492140ab29840497383956fc28d10c23ece01fb0ed7d14736a",
+      "output_sha256": "ba644c8793a8dc83a22b49c4f7b5188ade5c61a797d0f4826b33fb5a090b0a7c",
+      "excerpt_seconds": [
+        0,
+        0.6455625
+      ],
+      "duration_seconds": 0.6455625,
+      "processing": {
+        "format": "PCM16 WAV",
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "source_frames": 30987,
+        "output_frames": 30987,
+        "trimming": false,
+        "pitch_change": false,
+        "normalization": false,
+        "fade": false
+      },
+      "changes": "Entire supplied file decoded to PCM16 WAV, preserving frame count, sample rate and channel count. No excerpt, pitch shift, normalization or fade. Runtime uses the complete decoded buffer at playbackRate 1; ordinary existing voice interruption, mute and lifecycle behavior remain unchanged.",
+      "checked": "Resource catalog, embedded metadata and source-page license checked; converted frame count and PCM16 quantization checked. No claim of human listening verification.",
+      "catalog_id": "tiny-battlecry2",
+      "title": "小生物口技 · battlecry2 / Tiny creatures sounds",
+      "author": "fvcalderan",
+      "source": "https://opengameart.org/content/tiny-creatures-sounds",
+      "kind": "User-selected cartoon victory cue; source creator processed a human vocal recording.",
+      "playback": {
+        "full_buffer": true,
+        "rate": 1,
+        "volume": 0.9
+      }
+    },
+    {
+      "role": "lose",
+      "file": "lose-moo-notification.wav",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_resource_path": "audio/sfx/cow/preview/moo-notification.wav",
+      "source_sha256": "c21cd7c31bbe0ce8e894dbc11a7c5ea638ffecbcc745563e374f24332462cd07",
+      "output_sha256": "c21cd7c31bbe0ce8e894dbc11a7c5ea638ffecbcc745563e374f24332462cd07",
+      "excerpt_seconds": [
+        0,
+        0.9505668934240363
+      ],
+      "duration_seconds": 0.9505668934240363,
+      "processing": {
+        "format": "PCM16 WAV",
+        "sample_rate_hz": 44100,
+        "channels": 2,
+        "source_frames": 41920,
+        "output_frames": 41920,
+        "trimming": false,
+        "pitch_change": false,
+        "normalization": false,
+        "fade": false
+      },
+      "changes": "Entire supplied file decoded to PCM16 WAV, preserving frame count, sample rate and channel count. No excerpt, pitch shift, normalization or fade. Runtime uses the complete decoded buffer at playbackRate 1; ordinary existing voice interruption, mute and lifecycle behavior remain unchanged.",
+      "checked": "Resource catalog, embedded metadata and source-page license checked; converted frame count and PCM16 quantization checked. No claim of human listening verification.",
+      "catalog_id": "cow-moo-notification",
+      "title": "口技牛与怪声 · moo-notification / Sci-Fi Aliens and Cows Pack",
+      "author": "qubodup",
+      "source": "https://opengameart.org/content/sci-fi-aliens-and-cows-pack",
+      "kind": "User-selected mouth-made cartoon failure cue; not a field recording of a cow.",
+      "playback": {
+        "full_buffer": true,
+        "rate": 1,
+        "volume": 0.36
+      }
+    }
+  ],
+  "inactive_historical_clips": [
+    {
+      "file": "win.wav",
+      "former_role": "win",
+      "title": "gameover-win / Sci-Fi Aliens and Cows Pack",
+      "author": "qubodup",
+      "source": "https://opengameart.org/content/sci-fi-aliens-and-cows-pack",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "status": "Retained historical output; not loaded by current GameAudio."
+    },
+    {
+      "file": "lose.mp3",
+      "former_role": "lose",
+      "title": "Downer01 / Level up power up Coin get",
+      "author": "WobbleBoxx Workshop",
+      "source": "https://opengameart.org/content/level-up-power-up-coin-get-13-sounds",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "status": "Retained historical output; not loaded by current GameAudio."
     }
   ]
 }

@@ -1,6 +1,7 @@
 /* Source attribution and licenses: assets/CREDITS.txt and assets/audio-sources.json.
- * Animal calls use species-matched recordings at their supplied pitch.
- * Quiet/unmatched species use soft movement foley, never a borrowed animal voice. */
+ * Most animal calls use species-matched recordings at their supplied pitch.
+ * Capybara, victory and failure use the user's selected cartoon voice cues.
+ * These three cues play in full at their supplied pitch. */
 (function (global) {
   'use strict';
 
@@ -9,9 +10,10 @@
     cat: ['cat-real.wav'], pig: ['pig.wav'], cow: ['cow-real.wav'], frog: ['frog-real.wav'],
     chicken: ['chicken-real.wav'], duck: ['duck-real.wav'], elephant: ['elephant-real.wav'],
     penguin: ['penguin-real.wav'], panda: ['panda-chirp.wav'], fox: ['fox-real.wav'],
-    step: ['soft-step.wav'], turtle: ['turtle-shell.wav'], pop: ['pop.wav'],
-    move: ['move.wav'], rise: ['rise.mp3'], win: ['win.wav'], lose: ['lose.mp3']
+    step: ['soft-step.wav'], turtle: ['turtle-shell.wav'], capybara: ['capybara-squeal.wav'], pop: ['pop.wav'],
+    move: ['move.wav'], rise: ['rise.mp3'], win: ['win-battlecry2.wav'], lose: ['lose-moo-notification.wav']
   };
+  const FULL_LENGTH_SOUNDS = new Set(['capybara', 'win', 'lose']);
   const VOICES = {
     sheep: { sound: 'sheep', seconds: .73, volume: .32, rate: 1 },
     dog: { sound: 'dog', seconds: .24, volume: .3, rate: 1 },
@@ -23,7 +25,7 @@
     frog: { sound: 'frog', seconds: .62, volume: .68, rate: 1 },
     panda: { sound: 'panda', seconds: .45, volume: .3, rate: 1 },
     raccoon: { sound: 'step', seconds: .24, volume: .18, rate: 1 },
-    capybara: { sound: 'step', seconds: .24, volume: .18, rate: 1 },
+    capybara: { sound: 'capybara', seconds: 1.201, volume: .28, rate: 1 },
     elephant: { sound: 'elephant', seconds: .9, volume: .28, rate: 1 },
     penguin: { sound: 'penguin', seconds: .47, volume: .21, rate: 1 },
     chicken: { sound: 'chicken', seconds: .6, volume: .2, rate: 1 },
@@ -163,14 +165,15 @@
 
     play(name, seconds, volume, rate = 1, kind = 'feedback') {
       if (!this.context || !this.unlocked || this.suspended || global.document?.hidden || !this.sfxEnabled || this.context.state !== 'running') return null;
-      const buffer = this.clip(name, seconds * rate);
+      const fullLength = FULL_LENGTH_SOUNDS.has(name);
+      const buffer = fullLength ? this.buffers.get(name) : this.clip(name, seconds * rate);
       if (!buffer) return null; // Never replay a stale click after decoding completes.
       if (kind === 'animal') this.stopVoice(this.animalVoice);
       else while (this.feedbackVoices.length >= 2) this.stopVoice(this.feedbackVoices.shift());
       const source = this.context.createBufferSource();
       const gain = this.context.createGain();
       source.buffer = buffer;
-      source.playbackRate.value = rate;
+      source.playbackRate.value = fullLength ? 1 : rate;
       gain.gain.value = volume;
       source.connect(gain);
       gain.connect(this.context.destination);
@@ -210,9 +213,8 @@
     }
 
     invalid() { this.play('move', .2, .2, .55); }
-    win() { this.stopEffects(); this.play('win', .75, .45, 1.12); }
-    // Short electronic downward cue, without the previous vocal/beatbox sound.
-    lose() { this.stopEffects(); this.play('lose', .78, .32); }
+    win() { this.stopEffects(); this.play('win', .646, .9); }
+    lose() { this.stopEffects(); this.play('lose', .951, .36); }
 
     stopEffects() {
       this.stopVoice(this.animalVoice);
