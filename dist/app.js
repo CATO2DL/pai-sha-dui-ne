@@ -33,6 +33,7 @@
   }
   function start(level, seed = freshSeed(), generatorVersion = E.GENERATOR_VERSION) {
     clearTimeout(resultTimer); clearTimeout(comboTimer);
+    setLevelPickerOpen(false);
     $('modal').close(); audio.stopEffects();
     state = E.createLevel(level, seed, generatorVersion); selected = null; hint = null; history = [];
     lastClear = 0; comboCount = 0; $('combo').classList.remove('show');
@@ -156,7 +157,7 @@
     const buffered = selected?.type === 'buffer' ? E.getHead(state, selected) : null;
     queueButtons.forEach((button, index) => {
       const head = state.queues[index][0], returning = buffered && buffered.species === head?.species;
-      button.setAttribute('aria-label',head ? `第${index+1}队，队首${name(head.species)}，${returning ? '接回暂存队首的一只' : '移入暂存一只'}` : `第${index+1}队已清空，入口关闭`);
+      button.setAttribute('aria-label',head ? `第${index+1}队，队首${name(head.species)}，${buffered ? returning ? '接回暂存队首的一只' : '放下暂存队首，取消选择' : '移入暂存一只'}` : `第${index+1}队已清空，入口关闭`);
     });
   }
   function renderSelection() {
@@ -196,13 +197,15 @@
     const target = { type: 'queue', index };
     if (state.status !== 'playing') { showResult(); return; }
     const head = E.getHead(state, target);
-    if (!head) return;
-    const buffered = selected?.type === 'buffer' ? E.getHead(state, selected) : null;
-    if (buffered?.species === head.species) attempt({ type: 'buffer' }, target);
-    else {
+    if (selected?.type === 'buffer') {
+      const buffered = E.getHead(state, selected);
       selected = null;
-      attempt(target, { type: 'buffer' });
+      hint = null;
+      if (head && buffered?.species === head.species) attempt({ type: 'buffer' }, target);
+      else renderSelection();
+      return;
     }
+    if (head) attempt(target, { type: 'buffer' });
   }
   function attempt(from, to) {
     const animal = E.getHead(state, from), result = E.applyMove(state, from, to);
@@ -253,6 +256,10 @@
     const fresh = newBoard || level !== state.level;
     start(level, fresh ? freshSeed() : state.seed, fresh ? E.GENERATOR_VERSION : state.generatorVersion);
   }
+  function setLevelPickerOpen(open) {
+    $('level-picker').hidden = !open;
+    $('level-picker-toggle').setAttribute('aria-expanded', String(open));
+  }
   function updateSoundButtons() {
     for (const [id, enabled, label] of [['music-toggle',audio.musicEnabled,'背景音乐'],['sfx-toggle',audio.sfxEnabled,'游戏音效']]) {
       $(id).setAttribute('aria-pressed', String(enabled)); $(id).setAttribute('aria-label', `${enabled?'关闭':'开启'}${label}`); $(id).title = `${label}：${enabled?'开':'关'}`;
@@ -279,7 +286,12 @@
   });
   $('restart-button').onclick = () => confirmRestart(false);
   $('new-button').onclick = () => confirmRestart(true);
-  LEVEL_IDS.forEach((id, index) => { $(id).onclick = () => { if (state.level !== index+1) confirmRestart(true,index+1); }; });
+  $('level-picker-toggle').onclick = () => setLevelPickerOpen($('level-picker').hidden);
+  LEVEL_IDS.forEach((id, index) => { $(id).onclick = () => {
+    setLevelPickerOpen(false);
+    if (state.level !== index+1) confirmRestart(true,index+1);
+    $('level-picker-toggle').focus({ preventScroll: true });
+  }; });
   $('modal-close').onclick = () => $('modal').close();
   $('modal').addEventListener('click', e => { if (e.target === $('modal')) { const r=$('modal').getBoundingClientRect(); if (e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) $('modal').close(); } });
   $('credits-button').onclick = () => modal(`<h2>声音与小伙伴</h2><p>角色来自你提供的16种动物母版，动画由程序实现。</p><p>12种动物采用对应录音；兔、浣熊、水豚使用轻脚步声，乌龟使用轻敲壳的动作拟音。</p><p>背景音乐：Wacky Wobblings — Fupi（CC0）。</p><p>熊猫录音：Charlton 等，2019，<a href="https://doi.org/10.1371/journal.pone.0225772" target="_blank" rel="noopener">PLOS ONE 论文附录</a>，<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。已剪辑、转换格式和调整音量，保留源音高。</p><p>其他录音为CC0或公有领域，逐项作者、许可和剪辑记录见<a href="assets/CREDITS.txt" target="_blank" rel="noopener">完整声音来源</a>。</p>`);
@@ -287,7 +299,13 @@
   document.addEventListener('keydown', e => {
     if (!audio.unlocked) void audio.unlock();
     if ($('modal').open) return;
-    if (e.key === 'Escape') { selected = null; hint = null; renderSelection(); }
+    if (e.key === 'Escape') {
+      selected = null; hint = null; renderSelection();
+      if (!$('level-picker').hidden) {
+        setLevelPickerOpen(false);
+        $('level-picker-toggle').focus({ preventScroll: true });
+      }
+    }
     if (e.repeat || e.isComposing || e.altKey || e.ctrlKey || e.metaKey || e.target.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
     if (/^[1-9]$/.test(e.key)) { const i=Number(e.key)-1; if (state.queues[i]?.length) { e.preventDefault(); clickQueue(i); } }
     if (e.key.toLowerCase() === 'b' && state.buffer.length) { e.preventDefault(); selectBuffer(); }

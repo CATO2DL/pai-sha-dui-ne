@@ -31,12 +31,15 @@
 .buffer-flag{height:100px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:12px;pointer-events:none}
 .buffer-flag svg{display:block;width:100%;max-width:34px;height:76px;overflow:visible;rotate:-4deg}
 .header-actions{flex-wrap:wrap}
+.level-tabs[hidden]{display:none}
+#level-picker-toggle[aria-expanded=true]{background:var(--green);border-color:var(--green);color:#f8f8ed}
 @media(max-width:850px){.buffer-slots{--flag-width:29px;--station-gap:6px}}
 @media(max-width:590px){
-  .header{gap:8px;padding:10px 0}
-  .board{height:clamp(280px,calc(100svh - 288px),420px);min-height:280px}
+  .header{min-height:0;gap:8px;padding:10px 0}
+  .shell:has(#level-picker[hidden]){--mobile-board-offset:245px}
+  .board{height:clamp(280px,calc(100svh - var(--mobile-board-offset,288px)),420px);min-height:280px}
   .header-actions{flex-basis:100%;justify-content:center;gap:7px}
-  .level-tabs{flex-basis:100%;justify-content:center;gap:14px;margin:0 0 4px;padding:0;background:none}
+  .level-tabs{order:2;flex-basis:100%;justify-content:center;gap:14px;margin:0 0 4px;padding:0;background:none}
   .level-tab{width:32px;height:32px;background:#e7ebdb}
   .action-divider{display:none}
   .buffer-floor,.buffer-slots{min-height:128px}

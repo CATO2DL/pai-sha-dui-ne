@@ -13,7 +13,8 @@
   <header class="header">
     <a class="brand" href="./" aria-label="排啥队呢首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><ellipse cx="20" cy="26" rx="10" ry="8"/><ellipse cx="8" cy="15" rx="4" ry="5" transform="rotate(-25 8 15)"/><ellipse cx="18" cy="9" rx="4" ry="5"/><ellipse cx="29" cy="12" rx="4" ry="5" transform="rotate(25 29 12)"/></svg></span><span>排啥队呢</span></a>
     <div class="header-actions">
-      <div class="level-tabs" aria-label="选择关卡">
+      <button id="level-picker-toggle" class="icon-button" type="button" aria-controls="level-picker" aria-expanded="false" aria-label="选关" title="选关"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="5" r="2"/><path d="M7 18h9a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h9"/></svg></button>
+      <div id="level-picker" class="level-tabs" aria-label="选择关卡" hidden>
         <button id="level-one" class="level-tab active" aria-label="第一关" title="第一关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c9 1 15-4 14-14C9 4 4 10 5 19Zm0 0 9-9"/></svg></button>
         <button id="level-two" class="level-tab" aria-label="第二关" title="第二关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V10M12 14C5 15 3 10 3 5c7 0 9 4 9 9Zm0-3c0-6 4-9 9-9 0 6-3 10-9 9Z"/></svg></button>
         <button id="level-three" class="level-tab" aria-label="第三关" title="第三关"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-5 7h3l-5 7h14l-5-7h3l-5-7Zm0 14v4"/></svg></button>
